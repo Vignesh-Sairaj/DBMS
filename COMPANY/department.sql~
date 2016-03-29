@@ -1,0 +1,10 @@
+DROP TABLE DEPARTMENT;
+CREATE TABLE DEPARTMENT (
+  Dname        varchar(25) not null,
+  Dnumber      integer(4),
+  Mgr_ssn       char(9) not null, 
+  Mgr_start_date date,
+  primary key (Dnumber),
+  unique (Dname),
+  key (dname)
+);

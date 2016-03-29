@@ -1,0 +1,22 @@
+-- Query 11
+SELECT ALL Salary
+FROM EMPLOYEE;
+
+-- Query 11A
+SELECT DISTINCT Salary
+FROM EMPLOYEE;
+
+
+-- Query 4A
+
+(SELECT DISTINCT Pnumber
+FROM PROJECT, DEPARTMENT, EMPLOYEE
+WHERE Dnum = Dnumber AND Mgr_ssn = Ssn
+AND Lname ='Smith' )
+
+UNION
+
+(SELECT DISTINCT Pnumber
+FROM PROJECT, WORKS_ON, EMPLOYEE
+WHERE Pnumber = Pno AND Essn = Ssn
+AND Lname ='Smith');

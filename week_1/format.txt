@@ -1,0 +1,8 @@
+//Course//
+<CourseID> <CourseName> <DepID> <SemID> <Credits> <Prereq>
+
+//Grade//
+<StudID> <CourseID> <PreSem> <EndSem> <Total> <Grade>
+
+//Students//
+<StudID> <Name> <DeptID> <SemID> <GPA> <CGPA>

@@ -1,0 +1,16 @@
+DROP TABLE EMPLOYEE;
+CREATE TABLE EMPLOYEE (
+  Fname    varchar(15) not null, 
+  Minit    char,
+  Lname    varchar(15) not null,
+  Ssn      char(9),
+  Bdate    date,
+  Address  varchar(50),
+  Sex      char,
+  Salary   decimal(10,2),
+  Super_ssn char(9),
+  Dno      int NOT NULL,
+  primary key (Ssn),
+  foreign key (Super_ssn) references EMPLOYEE(Ssn),
+  foreign key (Dno) references DEPARTMENT(Dnumber)
+);
